@@ -1,0 +1,26 @@
+name: deploy to ec2 
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@4
+
+      - name: depoly Via ssh
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /home/ubuntu/docker-deploy-ec2-cicd
+            git pull
+            docker compose up -d --build
+
