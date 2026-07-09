@@ -22,5 +22,5 @@ jobs:
           script: |
             cd /home/ubuntu/docker-deploy-ec2-cicd
             git pull
-            docker compose up -d --build
+            sudo docker compose up -d --build
 
