@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: depoly Via ssh
         uses: appleboy/ssh-action@v1
