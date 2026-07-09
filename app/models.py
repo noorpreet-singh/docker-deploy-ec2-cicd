@@ -5,7 +5,7 @@ todos = [
 ]
 next_id = 3
 
-home = {"message" : "welcome"}
+home = {"message" : "welcome back"}
 health = {"status" : "healthy"}
 
 class Todo:
