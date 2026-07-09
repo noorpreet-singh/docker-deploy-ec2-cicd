@@ -1,0 +1,11 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    image: prj1-todo-api:v1
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+
