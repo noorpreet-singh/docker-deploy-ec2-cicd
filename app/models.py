@@ -1,7 +1,7 @@
 # In-memory storage
 todos = [
-    {"id": 1, "task": "Learn Docker"},
-    {"id": 2, "task": "Deploy EC2"}
+        {"id": 1, "task": "prabh"},
+    {"id": 2, "task": "gurbaj"}
 ]
 next_id = 3
 
